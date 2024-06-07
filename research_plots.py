@@ -76,24 +76,19 @@ while L>17:
 
 
 #replace this with whichever plot I want to make:
-#Plot R and M (combined)
 
-#plt.plot(R2,M2,'ob')
-plt.plot(R2,M2)
+#plt.plot(R2,I2,'ob')
+plt.plot(R2,I2)
 
-#plt.plot(R,M,'or')
-plt.plot(R,M)
+#plt.plot(R,I,'or')
+plt.plot(R,I)
 
 plt.xlabel("R (km)")
-plt.ylabel("M/M$_\odot$")
+plt.ylabel("I$\sim$")
+
+plt.xlim(3.5,19)
 
 #plt.legend(['Polytropic', '', 'BSk21', ''])
 plt.legend(['Polytropic', 'BSk21'])
-
-
-#plt.xlim(3.5,19)
-plt.ylim(0,2.5)
+#plt.title("Constant I$\sim$ vs. Radius (km)")
 plt.show()
-
-
-
